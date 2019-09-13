@@ -10,10 +10,8 @@ class Contact{
 }
 
 let tableauContact = [];
-const contact1 = new Contact("Lévisse", "Carole");
-const contact2 = new Contact("Nelsonne", "Mélodie");
-tableauContact.push(contact1);
-tableauContact.push(contact2);
+tableauContact.push(new Contact("Lévisse", "Carole"));
+tableauContact.push(new Contact("Nelsonne", "Mélodie"));
 
 console.log("Bienvenue dans le gestionnaire des contacts" + "\n" + "1 : Listez les contacts" + "\n" +" 2 : Ajoutez un contact "+ "\n" + " 0: Quittez ");
 
@@ -29,10 +27,9 @@ while("saisie" !== 0){
             case 2:
                 const nom = prompt("Entrez le nom du nouveau contact");
                 const prenom = prompt("Entrez le prenom du nouveau contact");
-                const monContact= new Contact(nom , prenom);
-                tableauContact.push(monContact); // monContact.ajouterContact
+                tableauContact.push(new Contact(nom , prenom));
                 break ;          
             }
         }
-        console.log("Au revoir ! ") // mal positionné (a la fin)
+        console.log("Au revoir ! ")
         
