@@ -15,8 +15,8 @@ class Contact{
 }
 
 let tableauContact = [];
-const contact1 = new Contact("Carole", "Lévisse"); // ordre nom, prenom
-const contact2 = new Contact("Mélodie" , "Nelsonne"); // ordre nom prenom
+const contact1 = new Contact("Lévisse", "Carole");
+const contact2 = new Contact("Nelsonne", "Mélodie");
 contact1.ajouterContact(contact1);
 contact2.ajouterContact(contact2);
 
