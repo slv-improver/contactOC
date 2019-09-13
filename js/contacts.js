@@ -45,5 +45,5 @@ while("saisie" !== 0){
             ajouterContact(monContact); // monContact.ajouterContact
             break ;          
     }
-    console.log("Au revoir ! ") // mal positionné (a la fin)
 }
+console.log("Au revoir ! ") // mal positionné (a la fin)
