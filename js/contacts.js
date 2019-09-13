@@ -3,7 +3,6 @@ Activité : gestion des contacts
 */
 
 class Contact{
-   let tableauContact = [];  // placer en dehors
     constructor(nom, premon){
         this.nom = nom;
         this.prenom = premon ;
@@ -23,6 +22,8 @@ class Contact{
     tableauContact[tailleTableau] = c ; 
     }
 }
+
+let tableauContact = [];
 const contact1 = new Contact("Carole", "Lévisse"); // ordre nom, prenom
 const contact2 = new Contact("Mélodie" , "Nelsonne"); // ordre nom prenom
 ajouterContact(contact1); // contact1.ajouterContact
