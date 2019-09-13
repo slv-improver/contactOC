@@ -14,9 +14,9 @@ tableauContact.push(new Contact("Lévisse", "Carole"));
 tableauContact.push(new Contact("Nelsonne", "Mélodie"));
 
 console.log("Bienvenue dans le gestionnaire des contacts" + "\n" + "1 : Listez les contacts" + "\n" +" 2 : Ajoutez un contact "+ "\n" + " 0: Quittez ");
-
-while("saisie" !== 0){
-    const saisie = Number(prompt("Choissisez une option"));
+var saisie = "";
+while(saisie !== 0) {
+    saisie = Number(prompt("Choissisez une option"));
     switch(saisie){
         case 1:
             console.log("Voici la liste de vos contacts")
@@ -30,6 +30,6 @@ while("saisie" !== 0){
                 tableauContact.push(new Contact(nom , prenom));
                 break ;          
             }
-        }
-        console.log("Au revoir ! ")
+}
+            console.log("Au revoir ! ")
         
