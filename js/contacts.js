@@ -7,18 +7,13 @@ class Contact{
         this.nom = nom;
         this.prenom = premon ;
     }
-
-    ajouterContact(c){
-        const tailleTableau  = tableauContact.length;
-        tableauContact[tailleTableau] = c ; 
-    }
 }
 
 let tableauContact = [];
 const contact1 = new Contact("Lévisse", "Carole");
 const contact2 = new Contact("Nelsonne", "Mélodie");
-contact1.ajouterContact(contact1);
-contact2.ajouterContact(contact2);
+tableauContact.push(contact1);
+tableauContact.push(contact2);
 
 console.log("Bienvenue dans le gestionnaire des contacts" + "\n" + "1 : Listez les contacts" + "\n" +" 2 : Ajoutez un contact "+ "\n" + " 0: Quittez ");
 
@@ -35,7 +30,7 @@ while("saisie" !== 0){
                 const nom = prompt("Entrez le nom du nouveau contact");
                 const prenom = prompt("Entrez le prenom du nouveau contact");
                 const monContact= new Contact(nom , prenom);
-                ajouterContact(monContact); // monContact.ajouterContact
+                tableauContact.push(monContact); // monContact.ajouterContact
                 break ;          
             }
         }
