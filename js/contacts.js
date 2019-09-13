@@ -8,18 +8,9 @@ class Contact{
         this.prenom = premon ;
     }
 
-    afficherContact(c){
-        console.log(`Nom : ${c.nom} + ", prenom : " + ${c.prenom}`);
-    }
-
-    parcourirContacts(){
-        for(const contact of tableauContact){
-          afficherContact(contact);  // contact.afficherContact
-        }
-    }
     ajouterContact(c){
-    const tailleTableau  = tableauContact.length;
-    tableauContact[tailleTableau] = c ; 
+        const tailleTableau  = tableauContact.length;
+        tableauContact[tailleTableau] = c ; 
     }
 }
 
@@ -34,16 +25,19 @@ console.log("Bienvenue dans le gestionnaire des contacts" + "\n" + "1 : Listez l
 while("saisie" !== 0){
     const saisie = Number(prompt("Choissisez une option"));
     switch(saisie){
-		case 1:
+        case 1:
             console.log("Voici la liste de vos contacts")
-            parcourirContacts(); //
+            for(const contact of tableauContact){
+                console.log(`Nom : ${contact.nom} + ", prenom : " + ${contact.prenom}`);
+            }
             break ;
-		case 2:
-            const nom = prompt("Entrez le nom du nouveau contact");
-            const prenom = prompt("Entrez le prenom du nouveau contact");
-            const monContact= new Contact(nom , prenom);
-            ajouterContact(monContact); // monContact.ajouterContact
-            break ;          
-    }
-}
-console.log("Au revoir ! ") // mal positionné (a la fin)
+            case 2:
+                const nom = prompt("Entrez le nom du nouveau contact");
+                const prenom = prompt("Entrez le prenom du nouveau contact");
+                const monContact= new Contact(nom , prenom);
+                ajouterContact(monContact); // monContact.ajouterContact
+                break ;          
+            }
+        }
+        console.log("Au revoir ! ") // mal positionné (a la fin)
+        
