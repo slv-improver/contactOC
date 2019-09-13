@@ -32,11 +32,11 @@ const saisie = prompt("Choissisez une option"); // Number()
 console.log("Bienvenue dans le gestionnaire des contacts" + "\n" + "1 : Listez les contacts" + "\n" +" 2 : Ajoutez un contact "+ "\n" + " 0: Quittez ");
 while("saisie" !== 0){
     switch(saisie){
-		case : 1 // case 1:
+		case 1:
             console.log("Voici la liste de vos contacts")
             parcourirContacts(); //
             break ;
-		case : 2 // case 2:
+		case 2:
             const nom = prompt("Entrez le nom du nouveau contact");
             const prenom = prompt("Entrez le prenom du nouveau contact");
             const monContact= new Contact(nom , prenom);
