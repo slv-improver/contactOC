@@ -26,8 +26,8 @@ class Contact{
 let tableauContact = [];
 const contact1 = new Contact("Carole", "Lévisse"); // ordre nom, prenom
 const contact2 = new Contact("Mélodie" , "Nelsonne"); // ordre nom prenom
-ajouterContact(contact1); // contact1.ajouterContact
-ajouterContact(contact2); // contact2.ajouterContact
+contact1.ajouterContact(contact1); // contact1.ajouterContact
+contact2.ajouterContact(contact2); // contact2.ajouterContact
 const saisie = prompt("Choissisez une option"); // Number()
 console.log("Bienvenue dans le gestionnaire des contacts" + "\n" + "1 : Listez les contacts" + "\n" +" 2 : Ajoutez un contact "+ "\n" + " 0: Quittez ");
 while("saisie" !== 0){
