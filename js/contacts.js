@@ -21,7 +21,7 @@ while(saisie !== 0) {
         case 1:
             console.log("Voici la liste de vos contacts")
             for(const contact of tableauContact){
-                console.log(`Nom : ${contact.nom} + ", prenom : " + ${contact.prenom}`);
+                console.log(`Nom : ${contact.nom}, prenom : ${contact.prenom}`);
             }
             break ;
             case 2:
