@@ -28,9 +28,11 @@ const contact1 = new Contact("Carole", "Lévisse"); // ordre nom, prenom
 const contact2 = new Contact("Mélodie" , "Nelsonne"); // ordre nom prenom
 contact1.ajouterContact(contact1);
 contact2.ajouterContact(contact2);
-const saisie = prompt("Choissisez une option"); // Number()
+
 console.log("Bienvenue dans le gestionnaire des contacts" + "\n" + "1 : Listez les contacts" + "\n" +" 2 : Ajoutez un contact "+ "\n" + " 0: Quittez ");
+
 while("saisie" !== 0){
+    const saisie = Number(prompt("Choissisez une option"));
     switch(saisie){
 		case 1:
             console.log("Voici la liste de vos contacts")
